@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telephone Number Form</title>
+</head>
+<body>
+    <h1>Telephone Number Submission</h1>
+    <form id="telephoneForm" action="/submit" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="telephone">Telephone Number (ddd-ddd-dddd):</label>
+        <input type="text" id="telephone" name="telephone" pattern="\d{3}-\d{3}-\d{4}" required><br><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
